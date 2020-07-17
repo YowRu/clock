@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="layout.css">
+    <title>clock</title>
+</head>
+<body>
+    <div class="clock">
+        <div class="minute"></div>
+        <div class="hour"></div>
+        <div class="second"></div>
+    </div>
+   <script>
+       let time = 0;
+       function timego(){ 
+            time++; 
+            let dt = new Date();
+            let hour = dt.getHours();
+            let minute = dt.getMinutes();
+            let second = dt.getSeconds();
+            
+            if(time > 0){
+                $('.hour').css({'transform':'rotate('+ (-90 + (30*hour))+'deg)'}); 
+                $('.minute').css({'transform':'rotate('+ (6*minute)+'deg)'});
+                $('.second').css({'transform':'rotate('+ (180 + (5*second))+'deg)'});
+            } 
+        }
+        window.setInterval("timego()",1000); 
+   </script> 
+</body>
+</html>
