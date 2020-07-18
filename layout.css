@@ -3,7 +3,7 @@ body{background-color: #293B29;display: flex;justify-content: center;align-items
 .clock{width:350px;height:350px;background:url('img/clock-bg.svg') no-repeat center;position: relative;
 display:flex;flex-direction: column;justify-content: center;align-items: center;}
 .minute{width:8px;height:96px;background:url('img/minute-hand.svg') no-repeat center;z-index:2;
-position: fixed;top:39.5%;left:49.7%;transform-origin:center bottom;}
+position: fixed;top:39.3%;left:49.7%;transform-origin:center bottom;}
 .hour{width:72px;height:8px;background:url('img/hour-hand.svg') no-repeat center;z-index:3;
 position: fixed;top:49.5%;left:50.2%;transform-origin:left center;}
 .second{width:12px;height:126px;background:url('img/second-hand.svg') no-repeat center;
